@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card-container">
+        <img class="card-background" src="background.avif" alt="Background">
+        <div class="card-logo">
+            <img class="card-logo-image" src="odin-lined.png" alt="Logo">
+            ODIN
+        </div>
+        <div class="copyright-text">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> 
+            on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></div>
+    </div>
+
+    <div class="content-container">
+        <div class="content-header">
+            <h1>Sign up with the following form <em>now</em>!</h1>
+            <h1>You <em>know</em> you want to.</h1>
+        </div>
+
+        <form class="form-element" action="/backend" method="post">
+            <div class="form-container">
+                <h1>Let's do this!</h1>
+                <div class="input-container">
+                    <div class="input-row">
+                        <div class="form-input">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="John" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="form-input">
+                            <label for="email">E-MAIL</label>
+                            <input type="email" name="email" id="email" placeholder="user.email@gmail.com" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="phone-no">PHONE NUMBER</label>
+                            <input type="tel" name="phone-no" id="phone-no" placeholder="017664359832" required>
+                        </div>
+                    </div>                
+                    <div class="input-row">
+                        <div class="form-input">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="confirm-pass">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-pass" id="confirm-pass" required>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button class="submit-button" type="submit">Create Account</button>
+        </form>
+        <div class="login-text">Already have an account? <a>Log in</a></div>
+    </div>
+</body>
+</html>
